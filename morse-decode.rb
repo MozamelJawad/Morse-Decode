@@ -37,6 +37,16 @@ puts char
 
 # decode word function
 
+def decode_word(word)
+  letters = word.split
+  decoded_word = ''
+  letters.each do |letter|
+    decoded_char = decode_char(letter)
+    decoded_word += decoded_char if decoded_char
+  end
+  decoded_word
+end
 
+puts decode_word('-- -.--')
 
 # decode function
