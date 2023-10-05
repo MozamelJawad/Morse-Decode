@@ -28,8 +28,12 @@ CODES_CHAR = {
 }.freeze
 
 # decode char function
+def decode_char(val)
+  CODES_CHAR[val]
+end
 
-
+char = decode_char('.-')
+puts char
 
 # decode word function
 
